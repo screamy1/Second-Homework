@@ -19,6 +19,8 @@ class FirstActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_first)
+        initializeViews()
+        setListener()
 
         counter = if (savedInstanceState == null) {
             Counter()
@@ -29,7 +31,15 @@ class FirstActivity : AppCompatActivity() {
 
     private fun initializeViews() {
         indicatorButton = findViewById(R.id.indicator_button)
-        textField = text_field
-        nextActivityButton = next_activity_button
+        textField = findViewById(R.id.text_field)
+        nextActivityButton = findViewById(R.id.next_activity_button)
+        counterButton = findViewById(R.id.counter_button)
+    }
+
+    private fun setListener() {
+        counterButton.setOnClickListener {
+            counter.increment()
+            counterButton.text = "Button was tapped ${counter.currentCount} times"
+        }
     }
 }
