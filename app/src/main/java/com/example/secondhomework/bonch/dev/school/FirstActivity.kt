@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.TextView
 import com.example.secondhomework.R
 import com.example.secondhomework.bonch.dev.school.Models.Counter
+import kotlinx.android.synthetic.main.activity_first.*
 
 class FirstActivity : AppCompatActivity() {
 
@@ -24,5 +25,11 @@ class FirstActivity : AppCompatActivity() {
         } else {
             Counter(savedInstanceState.getInt("TAP_AMOUNTS"))
         }
+    }
+
+    private fun initializeViews() {
+        indicatorButton = findViewById(R.id.indicator_button)
+        textField = text_field
+        nextActivityButton = next_activity_button
     }
 }
