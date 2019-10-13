@@ -1,8 +1,13 @@
 package com.example.secondhomework.bonch.dev.school
 
+import android.app.PendingIntent.getActivity
+import android.content.ComponentName
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import com.example.secondhomework.R
+import kotlinx.android.synthetic.main.activity_first_fragment.*
 
 class FragmentActivity : AppCompatActivity() {
 
@@ -11,26 +16,21 @@ class FragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
-
-        //attachFragment()
-        val firstFragment = FirstFragment()
-        fm.beginTransaction()
-            .add(R.id.fragment, firstFragment)
-            .commit()
-
+        attachFragment()
     }
 
-    /*fun attachFragment() {
-        val firstFragment = FirstFragment()
-        fm.beginTransaction()
-            .add(R.id.fragment, firstFragment)
+    fun attachFragment() {
+        fm
+            .beginTransaction()
+            .add(R.id.fragment, FirstFragment())
             .commit()
-    }*/
+    }
 
     fun replaceFragment() {
-        val fragment = SecondFragment()
-        fm.beginTransaction()
-            .replace(R.id.fragment, fragment)
+        fm
+            .beginTransaction()
+            .replace(R.id.fragment, SecondFragment())
+            .addToBackStack(null)
             .commit()
     }
 }

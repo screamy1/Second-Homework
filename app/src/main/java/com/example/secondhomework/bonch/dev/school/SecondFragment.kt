@@ -14,7 +14,8 @@ class SecondFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
-        val view = inflater.inflate(R.layout.activity_fragment, container, false)
+
+        val view = inflater.inflate(R.layout.activity_second_fragment, container, false)
         return view
     }
 
