@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bonch.dev.school.SecondActivity"></activity>
-        <activity android:name=".bonch.dev.school.FirstActivity">
+        <activity android:name=".bonch.dev.school.SecondFragment"></activity>
+        <activity android:name=".bonch.dev.school.FirstFragment" />
+        <activity android:name=".bonch.dev.school.FirstActivity" />
+        <activity android:name=".bonch.dev.school.SecondActivity" />
+        <activity android:name=".bonch.dev.school.FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
