@@ -28,6 +28,7 @@ class FirstFragment: Fragment() {
 
         nextActivityButton.setOnClickListener {
             (context as FragmentActivity).replaceFragment() }
+
         return view
     }
 
