@@ -5,20 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
     tools:context=".bonch.dev.school.FirstActivity">
 
-    <RelativeLayout
-        android:id="@+id/rel"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
             <Button
                 android:id="@+id/indicator_button"
                 android:layout_width="wrap_content"
@@ -41,16 +31,9 @@
                 android:text="" />
 
             <Button
-                android:id="@+id/attach_fragment_button"
+                android:id="@+id/next_activity_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Create Fragment" />
-        </LinearLayout>
-    </RelativeLayout>
+                android:text="Next Activity" />
 
-    <FrameLayout
-        android:id="@+id/fragment_container"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
 </LinearLayout>

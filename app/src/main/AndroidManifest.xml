@@ -14,9 +14,9 @@
         <activity android:name=".bonch.dev.school.third_task.MyFragment" />
         <activity android:name=".bonch.dev.school.SecondFragment" />
         <activity android:name=".bonch.dev.school.FirstFragment" />
-        <activity android:name=".bonch.dev.school.FirstActivity" />
         <activity android:name=".bonch.dev.school.SecondActivity" />
-        <activity android:name=".bonch.dev.school.third_task.FragmentActivity">
+        <activity android:name=".bonch.dev.school.third_task.FragmentActivity" />
+        <activity android:name=".bonch.dev.school.FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
