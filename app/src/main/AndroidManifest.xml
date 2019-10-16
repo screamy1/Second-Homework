@@ -9,11 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bonch.dev.school.SecondFragment"></activity>
+        <activity android:name=".bonch.dev.school.third_task.FragmentActivityThird"></activity>
+        <activity android:name=".bonch.dev.school.FragmentActivity1" />
+        <activity android:name=".bonch.dev.school.third_task.MyFragment" />
+        <activity android:name=".bonch.dev.school.SecondFragment" />
         <activity android:name=".bonch.dev.school.FirstFragment" />
         <activity android:name=".bonch.dev.school.FirstActivity" />
         <activity android:name=".bonch.dev.school.SecondActivity" />
-        <activity android:name=".bonch.dev.school.FragmentActivity">
+        <activity android:name=".bonch.dev.school.third_task.FragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

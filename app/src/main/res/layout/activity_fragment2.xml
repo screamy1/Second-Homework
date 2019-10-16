@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".bonch.dev.school.FirstActivity">
+    tools:context=".bonch.dev.school.third_task.FragmentActivity">
 
     <RelativeLayout
         android:id="@+id/rel"
@@ -39,6 +39,12 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:text="" />
+
+            <Button
+                android:id="@+id/next_activity_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next activity" />
 
             <Button
                 android:id="@+id/attach_fragment_button"

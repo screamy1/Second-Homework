@@ -9,7 +9,7 @@ import android.widget.EditText
 import com.example.secondhomework.R
 import kotlinx.android.synthetic.main.activity_first_fragment.*
 
-class FragmentActivity : AppCompatActivity() {
+class FragmentActivity1 : AppCompatActivity() {
 
     val fm = supportFragmentManager
 

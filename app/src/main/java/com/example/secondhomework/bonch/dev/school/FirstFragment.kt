@@ -1,17 +1,12 @@
 package com.example.secondhomework.bonch.dev.school
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.Fragment
 import com.example.secondhomework.R
-import kotlinx.android.synthetic.main.activity_first_fragment.*
-import kotlinx.android.synthetic.main.activity_first_fragment.view.*
 
 class FirstFragment: Fragment() {
     lateinit var nextActivityButton: Button
@@ -27,7 +22,7 @@ class FirstFragment: Fragment() {
         nextActivityButton = view!!.findViewById(R.id.next_activity_button)
 
         nextActivityButton.setOnClickListener {
-            (context as FragmentActivity).replaceFragment() }
+            (context as FragmentActivity1).replaceFragment() }
 
         return view
     }
